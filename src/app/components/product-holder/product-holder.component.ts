@@ -17,7 +17,6 @@ export class ProductHolderComponent implements OnInit {
   faHeart = faHeart;
   @Output() productId = new EventEmitter<string>();
   wasClicked = false;
-  review: Review;
 
   constructor(public messagesService: MessagesService) { }
 
