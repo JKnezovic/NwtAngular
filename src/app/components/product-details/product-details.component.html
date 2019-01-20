@@ -1,0 +1,25 @@
+<div *ngIf="product">
+  <div class="ProductName">
+    <h2>{{product.name}}</h2>
+    <p class="score"> ocjena {{calculateAverage(product.reviews)}} od 5</p>
+  </div>
+
+  <div class="description">
+    <img src={{product.src}} />
+    <p style="margin-top: 40px">{{product.description}}</p>
+  </div>
+
+  <div *ngFor="let review of product?.reviews">
+    <div class="reviewBox">
+      <div class="username">
+        <fa-icon [icon]="faUser" class="faUser" size=2x></fa-icon>
+        <p style="margin-left: 10px;">{{review.username}}</p>
+      </div>
+      <div class="head">
+        <p class="title">{{review.title}}</p>
+        <p style="margin-left: 10px;color: darkgray;">Score: {{review.score}}</p>
+      </div>
+      <p>{{review.text}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+.ProductName{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#score{
+    color: darkgray;
+    margin-left: 20px;
+    font-size: small;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+}
+
+.starContainer{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.favoriteContainer{
+    display: flex;
+    flex-direction: row;
+}
+.favoriteContainer>p{
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+.IconsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productContainer{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-color: darkgray;
+    border-bottom-style: double;
+    width: 70%;
+}
+.rating {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	color: #ddd; /* Personal choice */
+}
+.rating input {
+	display: none;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+	color: #ffc107; /* Personal color choice. Lifted from Bootstrap 4 */
+}
+
+.selected{
+    color:red;
+}

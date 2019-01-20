@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Ariel",
+        "description": "Ariel Colour and Style Washing Powder keeps coloured items vibrant. It removes tough stains by cleaning deep down into the fibres and prevents them setting in, even at 30°C. Keep colours sparkling with Ariel Colour Washing Powder! Use Lenor for an extra boost of freshness.",
+        "src": "../../assets/ariel.jpg",
+        "reviews": [
+            {
+                "text": "very good. cleaned grass and petrol oil stains",
+                "score": 4,
+                "username": "Federica Mascarpone",
+                "title": "I Like"
+            }
+        ]
+    },
+    {
+        "name": "Persil",
+        "description": "New & improved Persil Handwash powder is perfect for hand washing and for twin tub machines. It gives great cleaning results, even at low temperatures.To find out how to hand wash clothing, check out Persil's advice on handwashing and also look at Cleanipedia's tips on how to hand wash clothes.",
+        "src": "../../assets/persil.jpg",
+        "reviews": [
+            {
+                "text": "My mother and grandmother always used it and the clothes were always perfect but now they changed something and it's not good like it used to be",
+                "score": 3,
+                "username": "Romma Komma",
+                "title": "I no like"
+            }
+        ]
+    },
+    {
+        "name": "Tide",
+        "description": "Tide Free and Gentle HE Turbo Powder Laundry Detergent provides a great clean that's gentle on skin. It's a dermatologically-recommended detergent for your sensitive skin that is formulated without dyes and perfumes. It’s been specially formulated with HE Turbo technology. That’s why it’s the #1 recommended detergent by washing machine manufacturers",
+        "src": "../../assets/tide.jpg",
+        "reviews": [
+            {
+                "text": "my clothes lost their color with this. It's like i used bleach.",
+                "score": 1,
+                "username": "Wide Tide",
+                "title": "Horrible"
+            },
+            {
+                "text": " Works like a charm",
+                "score": 5,
+                "username": "Side Nyad",
+                "title": "YAAS"
+            }
+        ]
+    }
+]

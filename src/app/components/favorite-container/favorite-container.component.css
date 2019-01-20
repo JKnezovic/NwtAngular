@@ -1,0 +1,8 @@
+.favoriteHolder{
+    display: flex;
+    flex-direction: row;
+}
+.score{
+    color: darkgray;
+    font-size: small;
+}

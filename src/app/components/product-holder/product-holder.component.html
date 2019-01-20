@@ -1,0 +1,38 @@
+<div class="productContainer">
+  <div class="ProductName">
+    <h2>{{product.name}}</h2>
+    <p id="score"> ocjena {{calculateAverage(product.reviews)}} od 5</p>
+  </div>
+
+  <div class="description" (click)="passProductId(product.name)">
+    <img src={{product.src}} />
+    <p style="margin-top: 40px">{{product.description}}</p>
+  </div>
+  <div class="IconsContainer">
+
+    <div class="favoriteContainer" (click)="messagesService.add(product)">
+      <fa-icon [icon]="faHeart" (click)="onClick()" [class.selected]="wasClicked" size=2x></fa-icon>
+      <p>dodaj u favorite</p>
+    </div>
+
+    <div class="starContainer">
+      <div class="rating" style="width: 20rem">
+        <input id="rating-5" type="radio" name="rating" value="5" /><label for="rating-5" (click)="update(5,product.reviews)">
+          <fa-icon [icon]="faStar" size=2x></fa-icon>
+        </label>
+        <input id="rating-4" type="radio" name="rating" value="4" /><label for="rating-4" (click)="update(4,product.reviews)">
+          <fa-icon [icon]="faStar" size=2x></fa-icon>
+        </label>
+        <input id="rating-3" type="radio" name="rating" value="3" /><label for="rating-3" (click)="update(3,product.reviews)">
+          <fa-icon [icon]="faStar" size=2x></fa-icon>
+        </label>
+        <input id="rating-2" type="radio" name="rating" value="2" /><label for="rating-2" (click)="update(2,product.reviews)">
+          <fa-icon [icon]="faStar" size=2x></fa-icon>
+        </label>
+        <input id="rating-1" type="radio" name="rating" value="1" /><label for="rating-1" (click)="update(1,product.reviews)">
+          <fa-icon [icon]="faStar" size=2x></fa-icon>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

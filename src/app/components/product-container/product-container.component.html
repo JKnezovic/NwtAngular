@@ -1,0 +1,7 @@
+<div id="search">
+  <h2>Lista Proizvoda</h2>
+  <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for names.." style="margin-left: 50px;">
+  <fa-icon [icon]="faSearch" class="faSearch" size=2x></fa-icon>
+</div>
+<app-product-holder class="product" *ngFor="let product of (products | async); let i = index" [index]="i" [product]="product"
+  (productId)="viewProduct($event)"></app-product-holder>

@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+
+
+<div *ngIf="messagesService.products.length">
+
+
+    <app-favorite-container *ngFor='let product of messagesService.products' class="favoriteHolder" [product]="product"
+        (productId)="viewProduct($event)">
+    </app-favorite-container>
+
+    <button class="clear" (click)="messagesService.clear()">clear</button>
+</div>
